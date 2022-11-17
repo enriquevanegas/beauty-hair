@@ -1,0 +1,57 @@
+<form action="" class="form">
+    <div class="mb-3">
+        <label  class="form-label">Fecha*:</label>
+        <input type="date" class="form-control form-control-lg" id="date">
+        <label for="date" id="date-innerlabel">Selecciona la fecha</label>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Teléfono*:</label>
+        <input type="te" class="form-control form-control-lg" id="tel" placeholder="0123456789">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email*:</label>
+        <input type="email" class="form-control form-control-lg" id="emial" placeholder="hola@email.com">
+    </div>
+    <div class="mb-3 mt-5 d-flex">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-dark open-modal ms-auto" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="onSendData()">
+            ENVIAR DATOS
+        </button>
+        <!-- <app-modal class="ms-auto"></app-modal> -->
+    </div>
+</form>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5 mx-auto" id="exampleModalLabel">MODAL</h1>
+                <button type="button" class="btn-close ms-1" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+
+                    <div class="col-12 mb-4">
+                        <label for="zipcode-filter">Buscar Código Postal</label>
+                        <input type="number" class="form-control" id="setZipcode" placeholder="54150">
+                    </div>
+                
+                    <div class="col-12">
+                        <div class="row">
+                            <div *ngFor="let location of locations" class="col-12 card">
+                                <app-location [location]="location"></app-location>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">CANCELAR</button>
+                <button type="button" class="btn btn-primary send" (click)="getZipcode()">ENVIAR DATOS</button>
+            </div>
+        </div>
+    </div>
+</div>

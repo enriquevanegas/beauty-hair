@@ -1,0 +1,59 @@
+<h3 class="mb-2 text-end zipcode"> {{ location.Zip }} </h3>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <tbody>
+                <tr class="township">
+                    <td class="mb-2 township-data">Colonia:</td>
+                    <td class="mb-2 township-data"><span> {{ location.Township }} </span></td>
+                </tr>
+                <tr class="township">
+                    <td class="mb-2 township-data">Identificador de Colonia:</td>
+                    <td class="mb-2 township-data"><span> {{ location.TownshipIdentifier }} </span></td>
+                </tr>
+                <tr class="township">
+                    <td class="mb-2 township-data">Tipo de Colonia:</td>
+                    <td class="mb-2 township-data"><span> {{ location.TownshipType }} </span></td>
+                </tr>
+                <tr class="township">
+                    <td class="mb-2 township-data">Código de Tipo de Colonia:</td>
+                    <td class="mb-2 township-data"><span> {{ location.TownshipTypeCode }} </span></td>
+                </tr>
+                <tr class="township">
+                    <td class="mb-2 township-data">Colonia ZipD:</td>
+                    <td class="mb-2 township-data"><span> {{ location.TownshipZipD }} </span></td>
+                </tr>
+                <tr class="municipality">
+                    <td class="mb-2 municipality-data">Municipio/Alcaldía:</td>
+                    <td class="mb-2 municipality-data"><span> {{ location.Municipality }}</span></td>
+                </tr>
+                <tr class="municipality">
+                    <td class="mb-2 municipality-data">Código de Municipio/Alcaldía:</td>
+                    <td class="mb-2 municipality-data"><span> {{ location.MunicipalityCode }}</span></td>
+                </tr>
+                <tr class="municipality">
+                    <td class="mb-2 municipality-data">Oficina Postal:</td>
+                    <td class="mb-2 municipality-data"><span> {{ location.OfficeZipC }} </span></td>
+                </tr>
+                <tr class="city">
+                    <td class="mb-2 city-data">Ciudad:</td>
+                    <td class="mb-2 city-data"><span> {{ location.City }} </span></td>
+                </tr>
+                <tr class="city">
+                    <td class="mb-2 city-data">Código de Ciudad:</td>
+                    <td class="mb-2 city-data"><span> {{ location.CityCode }} </span></td>
+                </tr>
+                <tr class="state">
+                    <td class="mb-2 state-data">Estado:</td>
+                    <td class="mb-2 state-data"><span> {{ location.State }} </span></td>
+                </tr>
+                <tr class="state">
+                    <td class="mb-2 state-data">Código de Estado:</td>
+                    <td class="mb-2 state-data"><span> {{ location.StateCode }} </span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
