@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Fascinate";
+    src: local("Fascinate"), url(./assets/fonts/Fascinate/Fascinate-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir Book";
+    src: local("Avenir Book"), url(./assets/fonts/Avenir/AvenirLTStd-Book.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir Roman";
+    src: local("Avenir Book"), url(./assets/fonts/Avenir/AvenirLTStd-Roman.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Avenir Black";
+    src: local("Avenir Book"), url(./assets/fonts/Avenir/AvenirLTStd-Black.otf) format("truetype");
+}
