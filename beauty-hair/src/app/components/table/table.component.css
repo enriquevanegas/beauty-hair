@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+.table-striped.data-table>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #FBF2F3;
+}
+
+.table-striped.data-table thead tr *{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    color: #152536;
+}
+
+.table-striped.data-table tbody tr td {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #152536;
+}
+.table-striped.data-table tr td:first-child{
+    font-weight: 800!important;
+    padding-left: 21px;
+}

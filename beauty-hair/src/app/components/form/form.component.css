@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.form {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    width: 414px;
+    position: absolute;
+    top: 151px;
+    right: 76px;
+}
+
+.form > * {
+    width: 100%;
+}
+
+.form .form-label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.form input {
+    height: 54px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.06);
+    
+    font-size: 14px;
+    line-height: 30px;
+    color: #7D6266;
+}
+
+.form #date {
+    height: 56px;
+    padding: 9px 12px 8px;
+    gap: 3px;
+}
+
+.form #date-innerlabel {
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    top: 40px;
+    left: 12px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+.open-modal, .modal button {
+    border-radius: 50px;
+}
+
+.modal .modal-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #EDBCC2;
+}
+
+.modal .modal-body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal .modal-footer button {
+    height: 44px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: 700;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 16px;
+}
+
+.modal .modal-footer button.close {
+    background: rgba(108, 117, 125, 0.6);
+}
+
+.modal .modal-footer button.send {
+    background: #000;
+}
